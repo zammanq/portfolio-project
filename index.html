@@ -1,1 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 portfolio page for Zamman Qureshi, a cybersecurity student.">
+    <meta name="author" content="Zamman Qureshi">
 
+    <title>Zamman Qureshi | Cybersecurity Student Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header, footer {
+            
+        
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section, aside {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #e0e0e0;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Zamman Qureshi</h1>
+
+    <img src="zamman.jpeg"
+         alt="Photo of Zamman Qureshi"
+         width="220"
+         height="220">
+
+    <p>Cybersecurity Student at Penn State Lehigh Valley</p>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <article>
+            <h3>Background</h3>
+            <p>
+                My name is <strong>Zamman Qureshi</strong>, and I am a third-year
+                <abbr title="Cybersecurity">CyberSec</abbr> student at Penn State Lehigh Valley.
+                I am interested in learning how to protect systems and data from cyber threats.
+            </p>
+        </article>
+
+        <article>
+            <h3>Goals</h3>
+            <p>
+                My goal is to work in cybersecurity after graduation in
+                <time datetime="2027-05">May 2027</time>.
+                I want to help organizations reduce security risks.
+            </p>
+        </article>
+    </section>
+
+    <aside>
+        <h2>Quick Facts</h2>
+        <ul>
+            <li>From Macungie, PA</li>
+            <li>Cybersecurity Major</li>
+            <li>Enjoys spending time with friends and family</li>
+        </ul>
+    </aside>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <ul>
+            <li>HTML5 Basics</li>
+            <li>Network Security</li>
+            <li>Risk Analysis</li>
+            <li>Database Security</li>
+        </ul>
+
+        <table>
+            <caption>Skill Proficiency</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Skill</th>
+                    <th scope="col">Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">HTML</th>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <th scope="row">Cybersecurity</th>
+                    <td>Intermediate</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>A language used to structure web pages.</dd>
+
+            <dt>Cybersecurity</dt>
+            <dd>Protecting systems and data from digital attacks.</dd>
+        </dl>
+    </section>
+
+    <section id="projects">
+    <h2>Projects</h2>
+
+    <article>
+        <h3>Green Travel Experiences Project</h3>
+        <p>
+            Created a basic security plan for an e-commerce website focused on eco-friendly travel.
+            The project included <mark>risk identification</mark> and access controls.
+        </p>
+
+        <details>
+            <summary>More Information</summary>
+            <p>
+                This project focused on protecting customer data and maintaining system availability.
+            </p>
+        </details>
+    </article>
+
+    <!-- Additional project image -->
+    <img src="R.png"
+         alt="Penn State"
+         width="300"
+         height="200"
+         loading="lazy">
+         <p> Penn State </p>
+</section>
+
+<section id="resume">
+    <h2>Resume</h2>
+
+    <p>
+        Below is a summary of my education and experience. You can also download
+        my full resume as a PDF.
+    </p>
+
+    <article>
+        <h3>Education</h3>
+        <p>
+            <strong>B.S. Cyber Security</strong><br>
+            Penn State University<br>
+            Expected Graduation:
+            <time datetime="2027-05">May 2027</time>
+        </p>
+    </article>
+
+    <article>
+        <h3>Work Experience</h3>
+        <p>
+            <strong>Store Associate – Wegmans</strong><br>
+            June 2023 – Present
+        </p>
+        <ul>
+            <li>Managed data entry and inventory tracking using Excel</li>
+            <li>Maintained confidentiality and data accuracy</li>
+            <li>Assisted customers in a fast-paced environment</li>
+        </ul>
+    </article>
+
+    <p>
+        📄
+        <a href="Zamman_Qureshi_Professional_Resume.pdf" download>
+            Download My Resume (PDF)
+        </a>
+    </p>
+</section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Contact Form</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </fieldset>
+        </form>
+
+        <p>
+            Email: <a href="mailto:zpq5035@psu.edu">zpq5035@psu.edu</a><br>
+            Phone: <a href="tel:+17182007866">718-200-7866</a>
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Zamman Qureshi</p>
+    <p>Last updated: <time datetime="2026-01-22">January 22, 2026</time></p>
+</footer>
+
+</body>
+</html>
