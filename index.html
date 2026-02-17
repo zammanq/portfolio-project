@@ -18,7 +18,6 @@
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
- 
 
     <style>
         body {
@@ -30,7 +29,6 @@
 
         header, footer {
             
-        
         }
 
         nav ul {
@@ -58,25 +56,6 @@
             padding: 1.5rem;
             margin-bottom: 2rem;
             border-radius: 5px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid #ccc;
-            padding: 8px;
-        }
-
-        th {
-            background-color: #e0e0e0;
-        }
-
-        label {
-            display: block;
-            margin-top: 10px;
         }
     </style>
 </head>
@@ -117,6 +96,7 @@
     <!-- Test Button for Bootstrap -->
     <button class="btn btn-primary mb-3">Bootstrap Test Button</button>
 
+    <!-- About Section -->
     <button id="toggleAbout" class="btn btn-secondary mb-3">Toggle About Section</button>
     <section id="about">
         <h2>About Me</h2>
@@ -148,142 +128,126 @@
         </ul>
     </aside>
 
- <button id="toggleSkills" class="btn btn-secondary mb-3">Toggle Skills Section</button>
-<section id="skills">
-    <h2>Skills</h2>
+    <!-- Skills Section -->
+    <button id="toggleSkills" class="btn btn-secondary mb-3">Toggle Skills Section</button>
+    <section id="skills">
+        <h2>Skills</h2>
 
-    <div class="accordion" id="skillsAccordion">
+        <div class="accordion" id="skillsAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingHTML">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHTML" aria-expanded="true" aria-controls="collapseHTML">
+                        HTML
+                    </button>
+                </h2>
+                <div id="collapseHTML" class="accordion-collapse collapse show" aria-labelledby="headingHTML" data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body">
+                        Basics of structuring web pages and creating content.
+                    </div>
+                </div>
+            </div>
 
-        <!-- HTML Skill -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingHTML">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHTML" aria-expanded="true" aria-controls="collapseHTML">
-                    HTML
-                </button>
-            </h2>
-            <div id="collapseHTML" class="accordion-collapse collapse show" aria-labelledby="headingHTML" data-bs-parent="#skillsAccordion">
-                <div class="accordion-body">
-                    Basics of structuring web pages and creating content.
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCyber">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCyber" aria-expanded="false" aria-controls="collapseCyber">
+                        Cybersecurity
+                    </button>
+                </h2>
+                <div id="collapseCyber" class="accordion-collapse collapse" aria-labelledby="headingCyber" data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body">
+                        Protecting systems and data from digital attacks.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNetwork">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNetwork" aria-expanded="false" aria-controls="collapseNetwork">
+                        Network Security
+                    </button>
+                </h2>
+                <div id="collapseNetwork" class="accordion-collapse collapse" aria-labelledby="headingNetwork" data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body">
+                        Managing and securing networks against unauthorized access and threats.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingRisk">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRisk" aria-expanded="false" aria-controls="collapseRisk">
+                        Risk Analysis
+                    </button>
+                </h2>
+                <div id="collapseRisk" class="accordion-collapse collapse" aria-labelledby="headingRisk" data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body">
+                        Identifying and evaluating risks to help organizations improve security.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingDB">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDB" aria-expanded="false" aria-controls="collapseDB">
+                        Database Security
+                    </button>
+                </h2>
+                <div id="collapseDB" class="accordion-collapse collapse" aria-labelledby="headingDB" data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body">
+                        Protecting databases from unauthorized access and vulnerabilities.
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Cybersecurity Skill -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingCyber">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCyber" aria-expanded="false" aria-controls="collapseCyber">
-                    Cybersecurity
-                </button>
-            </h2>
-            <div id="collapseCyber" class="accordion-collapse collapse" aria-labelledby="headingCyber" data-bs-parent="#skillsAccordion">
-                <div class="accordion-body">
-                    Protecting systems and data from digital attacks.
-                </div>
-            </div>
-        </div>
-
-        <!-- Network Security Skill -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingNetwork">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNetwork" aria-expanded="false" aria-controls="collapseNetwork">
-                    Network Security
-                </button>
-            </h2>
-            <div id="collapseNetwork" class="accordion-collapse collapse" aria-labelledby="headingNetwork" data-bs-parent="#skillsAccordion">
-                <div class="accordion-body">
-                    Managing and securing networks against unauthorized access and threats.
-                </div>
-            </div>
-        </div>
-
-        <!-- Risk Analysis Skill -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingRisk">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRisk" aria-expanded="false" aria-controls="collapseRisk">
-                    Risk Analysis
-                </button>
-            </h2>
-            <div id="collapseRisk" class="accordion-collapse collapse" aria-labelledby="headingRisk" data-bs-parent="#skillsAccordion">
-                <div class="accordion-body">
-                    Identifying and evaluating risks to help organizations improve security.
-                </div>
-            </div>
-        </div>
-
-        <!-- Database Security Skill -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingDB">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDB" aria-expanded="false" aria-controls="collapseDB">
-                    Database Security
-                </button>
-            </h2>
-            <div id="collapseDB" class="accordion-collapse collapse" aria-labelledby="headingDB" data-bs-parent="#skillsAccordion">
-                <div class="accordion-body">
-                    Protecting databases from unauthorized access and vulnerabilities.
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-        <table class="table table-striped">
-            <caption>Skill Proficiency</caption>
-            <thead>
-                <tr>
-                    <th scope="col">Skill</th>
-                    <th scope="col">Level</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">HTML</th>
-                    <td>Intermediate</td>
-                </tr>
-                <tr>
-                    <th scope="row">Cybersecurity</th>
-                    <td>Intermediate</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <dl>
-            <dt>HTML</dt>
-            <dd>A language used to structure web pages.</dd>
-
-            <dt>Cybersecurity</dt>
-            <dd>Protecting systems and data from digital attacks.</dd>
-        </dl>
     </section>
 
+    <!-- Projects Section -->
     <button id="toggleProjects" class="btn btn-secondary mb-3">Toggle Projects Section</button>
     <section id="projects">
         <h2>Projects</h2>
-
         <div class="row row-cols-1 row-cols-md-2 g-4">
+
+            <!-- Project 1 Card -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="images/R.png" class="card-img-top" alt="Green Travel Project">
+                    <img src="images/R.png" class="card-img-top" alt="Green Travel Experiences Project">
                     <div class="card-body">
                         <h5 class="card-title">Green Travel Experiences Project</h5>
                         <p class="card-text">
                             Created a basic security plan for an e-commerce website focused on eco-friendly travel.
-                            The project included <mark>risk identification</mark> and access controls.
+                            Included <mark>risk identification</mark> and access controls.
                         </p>
                     </div>
                     <div class="card-footer">
-                        <details>
-                            <summary>More Information</summary>
-                            <p>
-                                This project focused on protecting customer data and maintaining system availability.
-                            </p>
-                        </details>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                            More Info
+                        </button>
                     </div>
                 </div>
             </div>
+
+        </div>
+
+        <!-- Modal for Project 1 -->
+        <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="project1ModalLabel">Green Travel Experiences Project</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                This project focused on protecting customer data, maintaining system availability, and implementing basic access controls.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
 
+    <!-- Resume Section -->
     <section id="resume">
         <h2>Resume</h2>
         <p>
@@ -322,6 +286,7 @@
         </p>
     </section>
 
+    <!-- Contact Section -->
     <button id="toggleContact" class="btn btn-secondary mb-3">Toggle Contact Section</button>
     <section id="contact">
         <h2>Contact Me</h2>
@@ -358,4 +323,5 @@
 
 </body>
 </html>
+
 
