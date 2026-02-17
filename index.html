@@ -2,14 +2,31 @@
 <html lang="en">
 <head>
 
-    <link rel="stylesheet" href="css/style.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HTML5 portfolio page for Zamman Qureshi, a cybersecurity student.">
     <meta name="author" content="Zamman Qureshi">
 
     <title>Zamman Qureshi | Cybersecurity Student Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Assignment Info Comment Block -->
+    <!--
+    Name: Z Q
+    Student ID: [your ID]
+    Course: [Course Name]
+    Assignment: ASG-L4: LIVE Portfolio Page + Bootstrap
+    Submission Date: [MM/DD/YYYY]
+    GitHub Repository: https://github.com/zammanq/portfolio-project
+    -->
 
     <style>
         body {
@@ -74,31 +91,43 @@
 
 <body>
 
-<header>
+<header class="text-center mb-4">
     <h1>Zamman Qureshi</h1>
 
     <img src="images/zamman.jpeg"
          alt="Photo of Zamman Qureshi"
          width="220"
-         height="220">
+         height="220"
+         class="rounded-circle mb-2">
 
     <p>Cybersecurity Student at Penn State Lehigh Valley</p>
 
-    <nav aria-label="Main navigation">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Bootstrap Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Main navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
 </header>
 
-<main>
-<button id="toggleAbout">Toggle About Section</button>
+<main class="container">
+    <!-- Test Button for Bootstrap -->
+    <button class="btn btn-primary mb-3">Bootstrap Test Button</button>
+
+    <button id="toggleAbout" class="btn btn-secondary mb-3">Toggle About Section</button>
     <section id="about">
         <h2>About Me</h2>
-
         <article>
             <h3>Background</h3>
             <p>
@@ -126,10 +155,10 @@
             <li>Enjoys spending time with friends and family</li>
         </ul>
     </aside>
-<button id="toggleSkills">Toggle Skills Section</button>
+
+    <button id="toggleSkills" class="btn btn-secondary mb-3">Toggle Skills Section</button>
     <section id="skills">
         <h2>Skills</h2>
-
         <ul>
             <li>HTML5 Basics</li>
             <li>Network Security</li>
@@ -137,7 +166,7 @@
             <li>Database Security</li>
         </ul>
 
-        <table>
+        <table class="table table-striped">
             <caption>Skill Proficiency</caption>
             <thead>
                 <tr>
@@ -165,73 +194,74 @@
             <dd>Protecting systems and data from digital attacks.</dd>
         </dl>
     </section>
-<button id="toggleProjects">Toggle Projects Section</button>
+
+    <button id="toggleProjects" class="btn btn-secondary mb-3">Toggle Projects Section</button>
     <section id="projects">
-    <h2>Projects</h2>
+        <h2>Projects</h2>
 
-    <article>
-        <h3>Green Travel Experiences Project</h3>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/R.png" class="card-img-top" alt="Green Travel Project">
+                    <div class="card-body">
+                        <h5 class="card-title">Green Travel Experiences Project</h5>
+                        <p class="card-text">
+                            Created a basic security plan for an e-commerce website focused on eco-friendly travel.
+                            The project included <mark>risk identification</mark> and access controls.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <details>
+                            <summary>More Information</summary>
+                            <p>
+                                This project focused on protecting customer data and maintaining system availability.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
         <p>
-            Created a basic security plan for an e-commerce website focused on eco-friendly travel.
-            The project included <mark>risk identification</mark> and access controls.
+            Below is a summary of my education and experience. You can also download
+            my full resume as a PDF.
         </p>
 
-        <details>
-            <summary>More Information</summary>
+        <article>
+            <h3>Education</h3>
             <p>
-                This project focused on protecting customer data and maintaining system availability.
+                <strong>B.S. Cyber Security</strong><br>
+                Penn State University<br>
+                Expected Graduation:
+                <time datetime="2027-05">May 2027</time>
             </p>
-        </details>
-    </article>
+        </article>
 
-    <!-- Additional project image -->
-    <img src="images/R.png"
-         alt="Penn State"
-         width="300"
-         height="200"
-         loading="lazy">
-         <p> Penn State </p>
-</section>
+        <article>
+            <h3>Work Experience</h3>
+            <p>
+                <strong>Store Associate – Wegmans</strong><br>
+                June 2023 – Present
+            </p>
+            <ul>
+                <li>Managed data entry and inventory tracking using Excel</li>
+                <li>Maintained confidentiality and data accuracy</li>
+                <li>Assisted customers in a fast-paced environment</li>
+            </ul>
+        </article>
 
-<section id="resume">
-    <h2>Resume</h2>
-
-    <p>
-        Below is a summary of my education and experience. You can also download
-        my full resume as a PDF.
-    </p>
-
-    <article>
-        <h3>Education</h3>
         <p>
-            <strong>B.S. Cyber Security</strong><br>
-            Penn State University<br>
-            Expected Graduation:
-            <time datetime="2027-05">May 2027</time>
+            📄
+            <a href="Zamman_Qureshi_Professional_Resume.pdf" download>
+                Download My Resume (PDF)
+            </a>
         </p>
-    </article>
+    </section>
 
-    <article>
-        <h3>Work Experience</h3>
-        <p>
-            <strong>Store Associate – Wegmans</strong><br>
-            June 2023 – Present
-        </p>
-        <ul>
-            <li>Managed data entry and inventory tracking using Excel</li>
-            <li>Maintained confidentiality and data accuracy</li>
-            <li>Assisted customers in a fast-paced environment</li>
-        </ul>
-    </article>
-
-    <p>
-        📄
-        <a href="Zamman_Qureshi_Professional_Resume.pdf" download>
-            Download My Resume (PDF)
-        </a>
-    </p>
-</section>
-<button id="toggleContact">Toggle Contact Section</button>
+    <button id="toggleContact" class="btn btn-secondary mb-3">Toggle Contact Section</button>
     <section id="contact">
         <h2>Contact Me</h2>
 
@@ -240,15 +270,15 @@
                 <legend>Contact Form</legend>
 
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required class="form-control mb-2">
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required class="form-control mb-2">
 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <textarea id="message" name="message" rows="4" required class="form-control mb-2"></textarea>
 
-                <button type="submit">Send</button>
+                <button type="submit" class="btn btn-primary">Send</button>
             </fieldset>
         </form>
 
@@ -260,10 +290,11 @@
 
 </main>
 
-<footer>
+<footer class="text-center mt-4 mb-2">
     <p>&copy; 2026 Zamman Qureshi</p>
     <p>Last updated: <time datetime="2026-01-22">January 22, 2026</time></p>
 </footer>
 
 </body>
 </html>
+
