@@ -215,3 +215,13 @@ tr:nth-child(even) {
         padding: var(--space-md);
     }
 }
+/* existing CSS above */
+
+footer {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
