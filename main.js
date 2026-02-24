@@ -1,4 +1,6 @@
-
+// =============================
+// Toggle Section Function
+// =============================
 function toggleSection(buttonId, sectionId) {
   const button = document.getElementById(buttonId);
   const section = document.getElementById(sectionId);
@@ -19,9 +21,9 @@ toggleSection("toggleProjects", "projects");
 toggleSection("toggleContact", "contact");
 
 // =============================
-// Hover Effect on Project Image
+// Hover Effect on Project Images
 // =============================
-const projectImages = document.querySelectorAll(".project-img");
+const projectImages = document.querySelectorAll(".card-img-top");
 
 projectImages.forEach((img) => {
   img.addEventListener("mouseover", () => {
